@@ -1,0 +1,32 @@
+img{
+    width: 300px;
+    height: 300px;
+    float: bottom;
+}
+
+div{
+    display: inline-block;
+    border: blue solid 3px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-image: url("../img/1.png");
+    background-repeat: space;
+    background-attachment: fixed;
+    width: 300px;
+    height: 300px;
+}
+
+#A:hover{
+
+}
+
+.AText{
+    text-align: justify;
+    opacity: 0;
+}
+
+.AText:hover{
+        opacity: 1;
+    color: red;
+}

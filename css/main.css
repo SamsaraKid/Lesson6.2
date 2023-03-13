@@ -1,0 +1,75 @@
+a{
+    text-decoration: none;
+    color: lightgray;
+    background-color: black;
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    transition: background-color 3s ease, font-size 1s ease;
+
+}
+
+a:hover{
+    background-color: crimson;
+    box-shadow: 5px 5px 3px lawngreen;
+    text-shadow: -5px 5px 3px darkcyan;
+    font-size: 40px;
+}
+
+img{
+    transition: 2s ease-in;
+}
+
+img:hover{
+    transform: rotate(360deg) translateX(200px);
+}
+
+h1{
+    display: inline-block;
+    position: relative;
+    border-bottom: 0px solid red;
+    transition: 2s;
+}
+
+h1:hover{
+
+        border-bottom: 2px solid red;
+}
+
+h1::before{
+    content: '';
+    background-color: blue;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+        transition: 2s;
+}
+
+h1:hover::before{
+    height: 0;
+    background-color: lawngreen;
+}
+
+h1::after{
+    content: '';
+}
+
+div{
+    border: 5px solid black;
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+    text-align: justify;
+}
+
+p{
+    opacity: 0;
+    transition: 3s;
+}
+
+p:hover{
+    opacity: 1;
+}

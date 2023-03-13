@@ -1,0 +1,43 @@
+div{
+    display: inline-block;
+    position: relative;
+    border-bottom: 0px solid red;
+    transition: 2s;
+}
+
+div:hover{
+    rotate: -360deg;
+}
+
+div::before{
+    content: '';
+    background-color: blue;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 2s;
+}
+
+div:hover::before{
+    width: 0;
+    rotate: 180deg;
+}
+
+
+div::after{
+    content: '';
+    background-color: blue;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: 2s;
+}
+
+div:hover::after{
+    width: 0;
+    rotate: 180deg;
+}

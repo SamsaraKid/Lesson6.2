@@ -1,0 +1,16 @@
+
+img{
+    transition: 2s;
+}
+
+#Apng:hover{
+    transform: scaleX(2);
+}
+
+#Bjpg:hover{
+    transform: rotate(360deg);
+}
+
+#Cjpg:hover{
+    transform: scaleY(2);
+}
